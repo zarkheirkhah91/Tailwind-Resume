@@ -1,0 +1,126 @@
+<!doctype html>
+<html dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="./src/output.css" rel="stylesheet">  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Resume-Zahra Kheirkhah</title>
+</head>
+<style>
+    .bg{
+        background-image: url("img/images.jpg");
+        background-size: cover;
+        background-position: top;
+        clip-path: circle(65.6% at 60% 0);
+    }
+</style>
+<!-- bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen -->
+<body dir="rtl" class="font-vazir bg-[#353434]">
+    <!-- ======= start navbar ======= -->
+    <header class="w-full z-50 px-10 py-5 text-white 
+    flex gap-10 items-center justify-between md:justify-start md:font-bold">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div class="nav-links duration-500 md:static absolute 
+                md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex 
+                items-center px-5">
+                <ul class="flex z-50 md:flex-row flex-col md:items-center md:gap-[2vw] 
+                nav-links md:flex items-center justify-center gap-6">
+                    <li><a class="hover:text-gray-500" href="#">Home</a></li>
+                    <li><a class="hover:text-gray-500" href="#">About</a></li>
+                    <li><a class="hover:text-gray-500" href="#">Services</a></li>
+                    <li><a class="hover:text-gray-500" href="#">Portfolio</a></li>
+                    <li><a class="hover:text-gray-500" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <img class="z-50 fixed top-4 left-5 w-16" src="./img/resume2.png" alt="">
+            <div class="flex items-center gap-6">
+                <!-- <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button> -->
+                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                    class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+            
+    </header>
+    <!-- ======= End navbar ======= -->
+
+    <!-- ======= start Background image ======= -->
+    <div class="bg w-full h-screen bg-fixed flex flex-col justify-center 
+        items-center gap-5 text-center align-center">
+        <h1 class="lg:text-[7rem] text-[2.5rem] text-white relative top-6 font-bold"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
+            Hi,I'm Zar
+        </h1>
+        <p class="text-white text-[1.5rem]"
+            data-aos="fade-right"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
+            Freelance Creative & Propfessional
+        </p>
+        <button class="bg-[#ff0066] font-bold hover:bg-white hover:text-black py-3 
+            px-10 rounded-md transition duration-1000 ease-in-out text-white">
+            Contact Me
+        </button>
+    </div>
+    <!-- ======= End Background image ======= -->
+    
+    <!-- ======= Start About Us  ======= -->
+    <div class="w-[80%] h-[1000px] lg:mt-0 flex lg:flex-row flex-col justify-center items-center gap-10 mx-auto">
+        <div class="lg:w-1/2 w-full text-white flex justify-start items-end flex-col gap-8 text-left">
+            <hr class="border-[#ff0066] w-32 border-2">
+            <h2 class="text-[3rem]">Introduction About Me</h2>
+            <p class="text-[1.4rem]">
+                elit. Quidem iste doloremque error dignissimos?
+                <br><br>Animi quod ut placeat dicta? Voluptatem, 
+            <br>excepturi harum vitae illo, consequuntur velit distinctio
+            </p>
+            <div class="flex gap-4">
+                <button class="bg-[#ff0066] font-bold hover:bg-white hover:text-black py-3 
+                px-10 rounded-md transition duration-1000 ease-in-out text-white">Hire Me</button>
+                <button class="bg-[#ff0066] font-bold hover:bg-white hover:text-black py-3 
+                px-10 rounded-md transition duration-1000 ease-in-out text-white">Contact</button>
+            </div>
+        </div>
+        <div class="lg:w-1/2 w-full">
+            <img src="img/HERO-1.jpg" class="rounded" alt="">
+        </div>
+    </div>
+    <!-- ======= End About Us ======= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        AOS.init();
+
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[16%]')
+        }
+    </script>
+</body>
+</html>
